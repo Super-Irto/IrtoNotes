@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IrtoNotes</title>
-<style>
-    body { font-family: Arial, sans-serif; padding: 50px; background: #f4f4f4; text-align: center; }
-    h1 { color: #4f46e5; }
-    a.button {
-        display: inline-block;
-        padding: 15px 25px;
-        font-size: 18px;
-        color: white;
-        background: #4f46e5;
-        text-decoration: none;
-        border-radius: 8px;
-        margin-top: 30px;
-    }
-    a.button:hover { background: #6366f1; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IrtoNotes</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        /* ====== Reset et style de base ====== */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background: #0f172a; color: #f8fafc; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; text-align: center; padding: 20px; }
+        h1 { color: #4f46e5; font-size: 3rem; margin-bottom: 10px; }
+        p { font-size: 1.2rem; margin-bottom: 25px; color: #94a3b8; }
+        
+        /* ====== GIF splash ====== */
+        .splash { max-width: 500px; width: 100%; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.4); margin-bottom: 30px; }
+
+        /* ====== Bouton téléchargement ====== */
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            background: #4f46e5;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .download-btn:hover {
+            background: #6366f1;
+            transform: translateY(-2px);
+        }
+
+        /* ====== Notes ====== */
+        .note { margin-top: 40px; font-size: 0.9rem; color: #94a3b8; }
+    </style>
 </head>
 <body>
-<h1>IrtoNotes</h1>
-<p>Application de gestion de tâches modernes et minimalistes.</p>
 
-<!-- Le lien vers le téléchargement -->
-<a href="https://github.com/TONUTILISATEUR/IrtoNotes/releases/download/v1.0/IrtoNotes.exe" class="button" id="download-btn">Télécharger IrtoNotes</a>
+    <!-- Titre -->
+    <h1>IrtoNotes</h1>
+    <p>L’application de gestion de tâches moderne, simple et efficace.</p>
+
+    <!-- GIF splash -->
+    <img src="assets/Irto_screen.gif" alt="Splash GIF" class="splash">
+
+    <!-- Bouton téléchargement -->
+    <a href="dist/IrtoNotes.exe" class="download-btn" download>Télécharger IrtoNotes</a>
+
+    <!-- Note pour Windows -->
+    <p class="note">⚠️ Windows peut afficher "éditeur inconnu" au premier lancement. Cliquez sur "Informations complémentaires → Exécuter quand même".</p>
 
 </body>
 </html>
