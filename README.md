@@ -53,3 +53,5 @@ IrtoNotes/
 ## Auteur
 
 --Super-Irto--
+
+© 2026 Super-Irto — Tous droits réservés
